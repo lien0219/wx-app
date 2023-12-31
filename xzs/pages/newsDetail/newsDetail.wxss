@@ -1,0 +1,60 @@
+.detail {
+  padding: 30rpx;
+}
+
+.detail .title {
+  font-size: 50rpx;
+  line-height: 1.5em;
+}
+
+.detail .info {
+  font-size: 28rpx;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0 50rpx;
+}
+
+.detail .info .left text {
+  padding-right: 15rpx;
+}
+
+.detail .info .right {
+  display: flex;
+  align-items: center;
+  color: var(--themeColor);
+  position: relative;
+}
+
+.detail .info .right .share {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.detail .info .right text {
+  padding-left: 5rpx;
+}
+
+.detail .content .pstyle {
+  padding: 10rpx 0;
+  line-height: 1.6em;
+}
+
+.detail .content .imgstyle {
+  border-radius: 10rpx;
+}
+
+.detail .copyright {
+  margin-top: 30rpx;
+  background: var(--globalBgColor2);
+  padding: 30rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+.detail .copyright .top {
+  font-size: 30rpx;
+  padding-bottom: 15rpx;
+}

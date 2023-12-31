@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/api/api",
+    "pages/form/form",
+    "pages/event/event",
+    "pages/data/data",
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/api2/api2",
+    "pages/api3/api3",
+    "pages/api4/api4"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "小程序demo",
+    "navigationBarBackgroundColor": "#00B26a",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/index"
+    },{
+      "text": "我的",
+      "pagePath":"pages/demo/demo"
+    }]
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "MyHeader":"/components/MyHeader/MyHeader",
+    "MyFooter":"/components/MyFooter/MyFooter"
+  }
+}

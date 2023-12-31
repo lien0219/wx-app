@@ -1,0 +1,23 @@
+
+
+<MyHeader></MyHeader>
+<!-- 图片引入以及配置 -->
+<image src="../../static/images/kuangbiao1.jpg" mode="widthFix"></image>
+<image src="../../static/images/pic3.jpg" mode="heightFix"></image>
+<image src="/static/images/yazi.gif" mode="aspectFit"></image>
+<image src="../../static/images/pic3.jpg" mode="aspectFill"></image>
+<!-- 长按保存 -->
+<image show-menu-by-longpress src="/static/images/yazi.gif" mode="aspectFit"></image>
+<!-- 视频引入和配置 -->
+<video 
+style="width: 100%; height: 400rpx;"
+src=""
+object-fit="fill"
+poster=""
+></video>
+<!-- 导航跳转 -->
+<navigator url="/pages/index/index">首页</navigator>
+<navigator url="/pages/logs/logs">
+ <image src="../../static/images/dog.jpg" style="width: 50rpx;height: 50rpx;"></image>
+</navigator>
+<MyFooter name="demo页面"></MyFooter>

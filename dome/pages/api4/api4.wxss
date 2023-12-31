@@ -1,0 +1,7 @@
+.out{
+  padding:30rpx;
+}
+.out .row{
+  padding:15rpx;
+  border-bottom:1px solid #ccc;
+}

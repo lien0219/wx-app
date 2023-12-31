@@ -1,0 +1,42 @@
+<van-search
+  value="{{ keyword }}"
+  shape="round"
+  background="#BDA066"
+  placeholder="请输入产品名称"
+  use-action-slot
+  bind:change="onChange"
+  bind:search="onSearch"
+  bind:clear="onClear"
+>
+<view slot="action" bind:tap="onSearch" style="color: #fff; padding: 0 30rpx;">搜索</view>
+</van-search>
+<!-- <van-search></van-search> -->
+
+<view class="history" wx:if="{{!productList.length && historyList.length}}">
+  <view class="title">
+    <view class="text">搜索历史</view>
+    <view class="remove" bind:tap="removeHistory">
+      <van-icon name="delete-o" size="18" />
+      <text class="font">清空历史</text>
+    </view>
+  </view>
+  <view class="content">
+    <view class="item" wx:for="{{historyList}}" wx:key="item" data-value="{{item}}" bind:tap="tapHisItem">{{item}}</view>   
+  </view>
+</view>
+
+<view class="total" wx:if="{{total}}">
+  共检索出<text>{{total}}</text>款产品
+</view>
+
+<view class="main">
+  <view class="box" wx:for="{{productList}}" wx:key="_id">
+    <xzs-product-item item="{{item}}"></xzs-product-item>
+  </view>
+</view>
+
+<van-empty 
+    wx:if="{{noData}}"
+    description="没有搜索结果"   
+    image="https://img01.yzcdn.cn/vant/empty-image-search.png"    
+/>

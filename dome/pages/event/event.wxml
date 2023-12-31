@@ -1,0 +1,51 @@
+<!-- 事件以及传参 -->
+<view class="block" bindtap="change" data-name="张三" data-age="40">
+   点击
+</view>
+<view class="text">
+ 名字： {{name}}-{{age}}
+</view>
+<view>--------</view>
+<view class="box" style="background:{{color}};width: {{size}}rpx;height: {{size}}rpx;" bindtap="changeBox">
+  随机数:{{num}}
+</view>
+
+<view>---------</view>
+<!-- 按钮 -->
+<button type="primary" size="default">按钮</button>
+<button type="primary" size="default" plain="true">按钮</button>
+<button type="primary" size="default" disabled="true">按钮</button>
+<button type="primary" size="default" loading="true">按钮</button>
+<button type="primary" size="default" open-type="contact">按钮</button>
+<view>--------</view>
+
+<!-- 输入框，复选框，文本框 -->
+<view class="out">
+  <input type="text"  placeholder="请输入用户名" placeholder-style="color:pink" class="inp"/>
+  <button type="primary" size="default">按钮</button>
+</view>
+<view class="out">
+  <view style="width: 100vw;height: 50rpx;margin: auto;border: 1px solid rebeccapurple;">{{title}}</view>
+
+  <input type="number" bindinput="onInput" bindfocus="onFocus" bindblur="onBlur"
+   placeholder="请输入用户名" placeholder-style="color:pink" class="inp"/>
+
+   <textarea class="textarea"></textarea>
+
+  <checkbox-group bindchange="checkChange">
+    <view style="margin-bottom: 20rpx;">
+      <label>
+      <checkbox value="diaoyv"></checkbox>
+      <text>钓鱼</text>
+    </label>
+    </view>
+    <view style="margin-bottom: 20rpx;">
+      <label>
+      <checkbox color="black" value="hahha"></checkbox>
+      <text>运动</text>
+    </label>
+    </view>
+  </checkbox-group>
+
+  <button disabled="{{!title.length}}" type="primary" size="default">按钮</button>
+</view>

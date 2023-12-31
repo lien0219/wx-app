@@ -1,0 +1,2 @@
+<button type="primary" bindtap="Btn">按钮</button>
+<input type="text" style="background: chocolate;margin: 20rpx;"/>

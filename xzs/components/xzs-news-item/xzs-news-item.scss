@@ -1,0 +1,47 @@
+.nsitem{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:30rpx;
+  .pic{
+    width: 220rpx;
+    height: 150rpx;
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .text{
+    width: 440rpx;
+    height: 150rpx;
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title{
+      line-height: 1.4em;
+      color:var(--globalColor);
+      font-size: 32rpx;
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;				
+      text-overflow: ellipsis;	
+      display: -webkit-box;		
+      -webkit-line-clamp: 2;
+      line-clamp: 2;					
+      -webkit-box-orient: vertical;
+    }
+    .info{
+      display: flex;
+      justify-content: space-between;
+      font-size: 28rpx;
+      color: var(--descColor);    
+      .block{
+        display: flex;
+        align-items: center;
+      }
+      .vanicon{
+        color: var(--descColor);  
+        margin-right: 6rpx;
+      }  
+    }
+  }
+}

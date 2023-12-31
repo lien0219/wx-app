@@ -1,0 +1,8 @@
+<view class="header">
+    <view class="big">
+        自定义头部大标题
+    </view>
+    <view class="small">
+      —小程序开发测试——
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="footer">  
+  <view class="row">解释权归XXXXX有限公司所有</view>
+  <view class="row">Copyright © {{year}} 版权所有</view>
+  <view class="row">浙江省杭州市滨江区XXXX</view>
+</view>
+
+<view class="kefu">
+  <button class="btn" open-type="contact">1</button>
+  <image src="/images/kefu.png" mode="aspectFill" class="pic"/>
+  <view class="line"></view>
+</view>

@@ -1,0 +1,64 @@
+
+
+<MyHeader></MyHeader>
+<!-- <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar> -->
+<navigator url="/pages/demo/demo" open-type="redirect">demo</navigator>
+<view class="box" hover-class="bxhover">
+    哈哈哈
+<!--  hover-stop-propagation 阻止冒泡，默认true -->
+    <view class="inner" hover-class="innerhover" hover-stop-propagation>
+    1111
+    </view>
+</view>
+<view>
+aaaa
+</view>
+<view>
+bbb
+</view>
+<text decode>&lt;11111</text>
+<text user-select>222</text>
+<text space="nbsp">3   333</text>
+<!-- 小图标 -->
+<icon type="success"></icon>
+<icon type="search"></icon>
+<!-- 进度条 -->
+<view>---------</view>
+<progress percent="50" show-info border-radius="10"></progress>
+<view style="width: 200rpx;height: 200rpx;background: green;"></view>
+<!-- 拖动导航 -->
+<scroll-view class="myScroll" scroll-x>
+  <view class="row">1</view>
+  <view class="row">2</view>
+  <view class="row">3</view>
+  <view class="row">4</view>
+  <view class="row">5</view>
+  <view class="row">6</view>
+  <view class="row">7</view>
+  <view class="row">8</view>
+  <view class="row">9</view>
+  <view class="row">10</view>
+</scroll-view>
+<!-- 可移动区域 -->
+<movable-area style="width:400rpx;height:400rpx;background: grey;">
+  <movable-view direction="all" inertia out-of-bounds x="20rpx" y="20rpx" style="width: 150rpx;height: 150rpx;background: green;">
+    <view>
+      demo
+    </view>
+  </movable-view>
+</movable-area>
+<!-- 媒体容器 -->
+<match-media min-width="200" max-width="350">
+  <view>当前宽度300-500px之间展示</view>
+</match-media>
+
+<!-- 脱离文档流遮罩层 -->
+<view class="out">
+  <view class="box1"></view>
+  <view class="box2">
+    <!-- <root-portal>
+      <view class="mask"></view>
+    </root-portal> -->
+  </view>
+</view>
+<MyFooter name="首页"></MyFooter>

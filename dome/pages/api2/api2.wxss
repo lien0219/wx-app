@@ -1,0 +1,22 @@
+/* pages/api2/api2.wxss */
+.out{
+	padding: 30rpx;
+}
+.out .box{
+	width: 100%;
+	height: 500rpx;
+	border: 1px solid #ccc;
+	margin-bottom: 30rpx;
+}
+.out .box .pic{
+	width: 100%;
+	height: 400rpx;
+}
+.out .box .pic image{
+	width: 100%;
+	height: 100%;
+}
+.out .box .name{
+	text-align: center;
+	line-height: 100rpx;
+}

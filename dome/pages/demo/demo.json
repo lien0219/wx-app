@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+  },
+  "navigationBarTitleText": "测试页面",
+  "navigationBarBackgroundColor": "#7bc0fd",
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,47 @@
+<view class="title">
+  文章评论
+</view>
+<view class="out">
+<!-- 第一种方法 -->
+<!-- <block wx:if="{{listArr.length}}">
+  <view class="list">
+    <view class="row" wx:for="{{listArr}}" wx:key="id">
+      <view class="text">{{index+1}}.{{item.title}}</view>
+      <view class="close" data-index="{{index}}" bindtap="clickClose">
+        <icon type="clear" size="26"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="count">
+    共{{listArr.length}}条评论
+  </view>
+</block>
+
+<view wx:else  style="text-align: center;font-size: 38rpx;color: #555;padding: 20rpx 0;">
+  暂无评论！
+</view> -->
+
+<!-- 第二种方法 -->
+<view class="list">
+    <view class="row" wx:for="{{listArr}}" wx:key="id">
+      <view class="text">{{index+1}}.{{item.title}}</view>
+      <view class="close" data-index="{{index}}" bindtap="clickClose">
+        <icon type="clear" size="26"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="count">
+    {{listArr.length?'共'+listArr.length+'条评论':'暂无评论!'}}
+  </view>
+
+  <view class="comment">
+  <!-- bindconfirm 回车发布 -->
+    <input type="text"
+    placeholder="请输入评论内容......"
+    placeholder-style="color:#aaa;font-size:28rpx;"
+    model:value="{{iptVal}}"
+    bindconfirm="onSubmit"
+    />
+    <button type="primary" size="mini" disabled="{{!iptVal.length}}" bindtap="onSubmit">发布</button>
+  </view>
+</view>

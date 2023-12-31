@@ -1,0 +1,54 @@
+.nsitem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+}
+
+.nsitem .pic {
+  width: 220rpx;
+  height: 150rpx;
+}
+
+.nsitem .pic .img {
+  width: 100%;
+  height: 100%;
+}
+
+.nsitem .text {
+  width: 440rpx;
+  height: 150rpx;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nsitem .text .title {
+  line-height: 1.4em;
+  color: var(--globalColor);
+  font-size: 32rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.nsitem .text .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: var(--descColor);
+}
+
+.nsitem .text .info .block {
+  display: flex;
+  align-items: center;
+}
+
+.nsitem .text .info .vanicon {
+  color: var(--descColor);
+  margin-right: 6rpx;
+}

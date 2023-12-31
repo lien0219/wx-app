@@ -1,0 +1,12 @@
+.footer{
+  background: #424242;
+  color:#fff;
+  padding:50rpx;
+  text-align: center;
+}
+.footer .title{
+  font-size: 52rpx;
+}
+.footer .small{
+  font-size: 32rpx;
+}

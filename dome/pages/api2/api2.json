@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#00804D",
+  "backgroundTextStyle": "light",
+  "onReachBottomDistance": 200
+}

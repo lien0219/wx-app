@@ -1,0 +1,50 @@
+.title{
+  font-size: 50rpx;
+  text-align: center;
+  color:#3c3c3c;
+  padding:60rpx 0 30rpx;
+}
+.out{
+  width: 690rpx;
+  margin:30rpx;
+  box-shadow: 0 15rpx 40rpx rgba(0,0,0,0.1);
+  border-radius: 10rpx;
+  padding:30rpx;
+  box-sizing: border-box;
+}
+.out .list .row{
+  padding:15rpx 0;
+  border-bottom:1rpx solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+  color:#333;
+}
+.out .list .row .text{
+  padding-right: 10rpx;
+  box-sizing: border-box;
+}
+.out .count{
+  padding:20rpx 0;
+  font-size: 30rpx;
+  color:#888;
+  text-align:center;
+}
+.out .comment{
+  display: flex;
+  margin-top:20rpx;
+}
+.out .comment input{
+  flex:4;
+  background: #f4f4f4;
+  margin-right: 10rpx;
+  height: 100%; 
+  height: 64rpx;
+  border-radius: 8rpx;
+  padding:0 20rpx;
+  color:#333;
+}
+.out .comment button{
+  flex:1;
+}
